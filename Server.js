@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Define review schema
 const reviewSchema = new mongoose.Schema({
-    imdb: { type: String, unique: true },
+    imdb: { type: String },
     rating: Number,
     review: String
 });
